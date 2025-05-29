@@ -130,9 +130,14 @@ export default function Home() {
     const peak1Year = yearOfBirth + peak1Age;
     /* end peak 1 */
 
-    /* challenge 1 */
+    /* challenge 2 */
+    const challenge2Number = Math.abs(
+      convertInto1Digit(ngaySinh1So) - convertInto1Digit(namSinh1So)
+    );
 
-    /* end challenge 1 */
+    console.log("challenge2Number", challenge2Number);
+
+    /* end challenge 2 */
 
     setDiagramNumbers({
       top: {
@@ -143,7 +148,11 @@ export default function Home() {
         type: "peak",
       },
       bottom: {
-        number: convertInto1Digit(Math.abs(thangSinh1So - namSinh1So)),
+        number: convertInto1Digit(
+          Math.abs(
+            convertInto1Digit(thangSinh1So) - convertInto1Digit(namSinh1So)
+          )
+        ),
         peak: 4,
         type: "challenge",
       },
@@ -170,20 +179,28 @@ export default function Home() {
       rightSide: { number: convertInto1Digit(namSinh1So) },
       center: { number: convertInto1Digit(ngaySinh1So) },
       lowerRight: {
-        number: convertInto1Digit(Math.abs(ngaySinh1So - namSinh1So)),
+        number: challenge2Number,
         peak: 2,
         type: "challenge",
       },
       lowerLeft: {
-        number: convertInto1Digit(Math.abs(ngaySinh1So - thangSinh1So)),
+        number: convertInto1Digit(
+          Math.abs(
+            convertInto1Digit(ngaySinh1So) - convertInto1Digit(thangSinh1So)
+          )
+        ),
         peak: 1,
         type: "challenge",
       },
       lowerCenter: {
         number: convertInto1Digit(
           Math.abs(
-            Math.abs(ngaySinh1So - namSinh1So) -
-              Math.abs(ngaySinh1So - thangSinh1So)
+            Math.abs(
+              convertInto1Digit(ngaySinh1So) - convertInto1Digit(namSinh1So)
+            ) -
+              Math.abs(
+                convertInto1Digit(ngaySinh1So) - convertInto1Digit(thangSinh1So)
+              )
           )
         ),
         peak: 3,

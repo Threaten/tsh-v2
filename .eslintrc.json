@@ -1,0 +1,8 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@typescript-eslint/no-unused-vars": ["warn", {
+      "varsIgnorePattern": "^(soNgay|soThang|soNam|dateOfBirth|chiSoNguyenAmDauTrongTen|chiSoChuDauTrongTen|chiSoChuCuoiTrongTen|chiSoNhanThucTinhThan|chiSoNhanThucTrucGiac|chiSoNhanThucCamXuc|chiSoNhanThucTheChat|chiSoThieu|chiSoYeu)$"
+    }]
+  }
+}

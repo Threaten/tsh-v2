@@ -154,7 +154,7 @@ const NumberDiagram: React.FC<NumberDiagramProps> = ({ numbers }) => {
         {/* Left side numbers */}
         <NumberBlock
           {...numbers.left}
-          className="absolute top-[30%] left-[30%]"
+          className="absolute top-[30%] left-[27%]"
         />
         <NumberBlock
           {...numbers.leftSide}
@@ -170,7 +170,7 @@ const NumberDiagram: React.FC<NumberDiagramProps> = ({ numbers }) => {
         {/* Right side numbers */}
         <NumberBlock
           {...numbers.right}
-          className="absolute top-[30%] right-[30%]"
+          className="absolute top-[30%] right-[27%]"
         />
         <NumberBlock
           {...numbers.rightSide}

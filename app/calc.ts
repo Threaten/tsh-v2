@@ -163,10 +163,10 @@ const chiSoPhuongTienNhanThucTinhThan = (name: string) => {
       if (num) sum += num;
     }
   }
-  console.log(
-    "Chi so phuong tien nhan thuc tinh than:",
-    convertInto1Digit(sum)
-  );
+  //   console.log(
+  //     "Chi so phuong tien nhan thuc tinh than:",
+  //     convertInto1Digit(sum)
+  //   );
 
   return convertInto1Digit(sum);
 };
@@ -183,10 +183,10 @@ const chiSoPhuongTienNhanThucTrucGiac = (name: string) => {
     }
   }
 
-  console.log(
-    "Chi so phuong tien nhan thuc truc giac:",
-    convertInto1Digit(sum)
-  );
+  //   console.log(
+  //     "Chi so phuong tien nhan thuc truc giac:",
+  //     convertInto1Digit(sum)
+  //   );
 
   return convertInto1Digit(sum);
 };
@@ -202,7 +202,7 @@ const chiSoPhuongTienNhanThucCamXuc = (name: string) => {
       if (num) sum += num;
     }
   }
-  console.log("Chi so phuong tien nhan thuc cam xuc:", convertInto1Digit(sum));
+  //   console.log("Chi so phuong tien nhan thuc cam xuc:", convertInto1Digit(sum));
 
   return convertInto1Digit(sum);
 };
@@ -218,7 +218,7 @@ const chiSoPhuongTienNhanThucTheChat = (name: string) => {
       if (num) sum += num;
     }
   }
-  console.log("Chi so phuong tien nhan thuc the chat:", convertInto1Digit(sum));
+  //   console.log("Chi so phuong tien nhan thuc the chat:", convertInto1Digit(sum));
 
   return convertInto1Digit(sum);
 };
@@ -240,7 +240,7 @@ const chiSoCanBang = (name: string) => {
     const num = characterToNumber(firstChar);
     if (num) sum += num;
   }
-  console.log("Chi so can bang:", convertInto1Digit(sum));
+  //   console.log("Chi so can bang:", convertInto1Digit(sum));
 
   return convertInto1Digit(sum);
 };
@@ -252,7 +252,7 @@ const tinhSoNgay = (date: string) => {
   for (let i = 0; i < date.length; i++) {
     tongNgaySinh += parseInt(date[i]);
   }
-  console.log("songay", convertInto1DigitKeepSpecialNumber(tongNgaySinh));
+  //   console.log("songay", convertInto1DigitKeepSpecialNumber(tongNgaySinh));
 
   return convertInto1DigitKeepSpecialNumber(tongNgaySinh);
 };
@@ -276,7 +276,7 @@ const tinhSoNam = (year: string) => {
   for (let i = 0; i < year.length; i++) {
     tongNamSinh += parseInt(year[i]);
   }
-  console.log("sonam", convertInto1DigitKeepSpecialNumber(tongNamSinh));
+  //   console.log("sonam", convertInto1DigitKeepSpecialNumber(tongNamSinh));
 
   return convertInto1DigitKeepSpecialNumber(tongNamSinh);
 };
@@ -286,10 +286,10 @@ export const tinhChiSoDuongDoi = (props: Props) => {
     tinhSoNgay(props.dateOfBirth) +
     tinhSoThang(props.monthOfBirth) +
     tinhSoNam(props.yearOfBirth);
-  console.log(
-    "chisoduongdoi",
-    convertInto1DigitKeepSpecialNumber(tongNgayThangNamSinh)
-  );
+  //   console.log(
+  //     "chisoduongdoi",
+  //     convertInto1DigitKeepSpecialNumber(tongNgayThangNamSinh)
+  //   );
 
   return convertInto1DigitKeepSpecialNumber(tongNgayThangNamSinh);
 };
@@ -315,7 +315,7 @@ export const tinhChiSoTinhCach = (props: Props) => {
   });
 
   // Calculate final result
-  console.log("chisotinhcach", convertInto1DigitKeepSpecialNumber(tongPhuAm));
+  //   console.log("chisotinhcach", convertInto1DigitKeepSpecialNumber(tongPhuAm));
   return convertInto1DigitKeepSpecialNumber(tongPhuAm);
 };
 
@@ -334,7 +334,7 @@ export const tinhChiSoNoiTam = (props: Props) => {
 
     tongNguyenAm += convertInto1DigitKeepSpecialNumber(tongNguyenAmTungTu);
   });
-  console.log("chisonoitam", convertInto1DigitKeepSpecialNumber(tongNguyenAm));
+  //   console.log("chisonoitam", convertInto1DigitKeepSpecialNumber(tongNguyenAm));
 
   return convertInto1DigitKeepSpecialNumber(tongNguyenAm);
 };
@@ -363,7 +363,7 @@ export const tinhChiSoDamMeTiemAn = (props: Props) => {
       }
     }
   }
-  console.log("chisodamme", results);
+  //   console.log("chisodamme", results);
 
   return results;
 };
@@ -384,6 +384,13 @@ export const tinhChuCuoiTrongTen = (props: Props) => {
 };
 
 export const tinhChiSoThaiDo = (props: Props) => {
+  //   console.log(
+  //     "so ngay " +
+  //       tinhSoNgay(props.dateOfBirth) +
+  //       "+ so thang" +
+  //       tinhSoThang(props.monthOfBirth)
+  //   );
+
   return tinhSoNgay(props.dateOfBirth) + tinhSoThang(props.monthOfBirth);
 };
 
@@ -436,7 +443,7 @@ export const tinhChiSoSuMenh = (props: Props) => {
 
     tongChiSoSum += convertInto1Digit(wordSum);
   });
-  console.log("chisosumenh", convertInto1DigitKeepSpecialNumber(tongChiSoSum));
+  //   console.log("chisosumenh", convertInto1DigitKeepSpecialNumber(tongChiSoSum));
 
   return convertInto1DigitKeepSpecialNumber(tongChiSoSum);
 };
@@ -540,7 +547,7 @@ export const timSoLap = (props: Props) => {
     }
   }
 
-  console.log("Chi so lap:", duplicates);
+  //   console.log("Chi so lap:", duplicates);
 
   return duplicates;
 };

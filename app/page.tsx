@@ -523,36 +523,36 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 text-white p-4 md:p-8">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-100 to-amber-200 text-gray-800 p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
+        <h1 className="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-yellow-600">
           Thần Số Học
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           {/* Input Section */}
           <div className="space-y-4">
-            <div className="bg-black/30 backdrop-blur-md rounded-xl p-6 shadow-xl border border-white/10">
+            <div className="bg-amber-50/80 backdrop-blur-md rounded-xl p-6 shadow-xl border border-amber-200/50">
               <div className="space-y-6">
-                <div className="backdrop-blur-sm bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
+                <div className="backdrop-blur-sm bg-amber-100/50 p-4 rounded-lg hover:bg-amber-100/70 transition-colors">
                   <label className="text-lg font-medium mb-2 block">
                     Họ và Tên
                   </label>
                   <input
                     type="text"
                     id="txtFullName"
-                    className="w-full bg-black/20 border border-white/20 rounded-md p-2 text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                    className="w-full bg-white/70 border border-amber-200/70 rounded-md p-2 text-gray-800 focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                     placeholder="Nhập họ và tên..."
                   />
                 </div>
-                <div className="backdrop-blur-sm bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
+                <div className="backdrop-blur-sm bg-amber-100/50 p-4 rounded-lg hover:bg-amber-100/70 transition-colors">
                   <label className="text-lg font-medium mb-2 block">
                     Ngày tháng năm sinh
                   </label>
                   <input
-                    className="w-full bg-black/20 border border-white/20 rounded-md p-2 text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                    className="w-full bg-white/70 border border-amber-200/70 rounded-md p-2 text-gray-800 focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
                     type="date"
                     id="txtDoB"
                     value={dob}
@@ -560,9 +560,9 @@ export default function Home() {
                   />
                 </div>
                 <button
-                  className="w-full bg-gradient-to-r from-purple-500 to-violet-500 text-white py-3 px-6 rounded-lg font-medium 
+                  className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 text-gray-800 py-3 px-6 rounded-lg font-medium 
                            hover:opacity-90 transition-all transform hover:scale-[1.02] active:scale-[0.98]
-                           shadow-lg hover:shadow-purple-500/25"
+                           shadow-lg hover:shadow-amber-500/25"
                   onClick={onSubmit}
                 >
                   Tính Toán
@@ -572,35 +572,35 @@ export default function Home() {
           </div>
 
           {/* Results Table */}
-          <div className="bg-black/30 backdrop-blur-md rounded-xl p-6 shadow-xl border border-white/10">
+          <div className="bg-amber-50/80 backdrop-blur-md rounded-xl p-6 shadow-xl border border-amber-200/50">
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-white/5">
-                    <th className="p-3 text-center border border-white/20 font-medium">
+                  <tr className="bg-amber-100/50">
+                    <th className="p-3 text-center border border-amber-200/50 font-medium">
                       Nội tâm
                     </th>
-                    <th className="p-3 text-center border border-white/20 font-medium">
+                    <th className="p-3 text-center border border-amber-200/50 font-medium">
                       Tính cách
                     </th>
-                    <th className="p-3 text-center border border-white/20 font-medium">
+                    <th className="p-3 text-center border border-amber-200/50 font-medium">
                       Sứ mệnh
                     </th>
-                    <th className="p-3 text-center border border-white/20 font-medium">
+                    <th className="p-3 text-center border border-amber-200/50 font-medium">
                       Ngày sinh
                     </th>
-                    <th className="p-3 text-center border border-white/20 font-medium">
+                    <th className="p-3 text-center border border-amber-200/50 font-medium">
                       Đường đời
                     </th>
-                    <th className="p-3 text-center border border-white/20 font-medium">
+                    <th className="p-3 text-center border border-amber-200/50 font-medium">
                       Thái độ
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-3 text-center border border-white/20">
-                      <span className="text-yellow-400 font-bold text-2xl">
+                  <tr className="hover:bg-amber-100/30 transition-colors">
+                    <td className="p-3 text-center border border-amber-200/50">
+                      <span className="text-amber-600 font-bold text-2xl">
                         {chiSoNoiTam <= 9
                           ? chiSoNoiTam
                           : chiSoNoiTam > 9 && detectSpecialNumber(chiSoNoiTam)
@@ -608,8 +608,8 @@ export default function Home() {
                           : convertInto1Digit(chiSoNoiTam)}
                       </span>
                     </td>
-                    <td className="p-3 text-center border border-white/20">
-                      <span className="text-yellow-400 font-bold text-2xl">
+                    <td className="p-3 text-center border border-amber-200/50">
+                      <span className="text-amber-600 font-bold text-2xl">
                         {chiSoTinhCach <= 9
                           ? chiSoTinhCach
                           : chiSoTinhCach > 9 &&
@@ -620,8 +620,8 @@ export default function Home() {
                           : convertInto1Digit(chiSoTinhCach)}
                       </span>
                     </td>
-                    <td className="p-3 text-center border border-white/20">
-                      <span className="text-yellow-400 font-bold text-2xl">
+                    <td className="p-3 text-center border border-amber-200/50">
+                      <span className="text-amber-600 font-bold text-2xl">
                         {chiSoSuMenh <= 9
                           ? chiSoSuMenh
                           : chiSoSuMenh > 9 && detectSpecialNumber(chiSoSuMenh)
@@ -629,8 +629,8 @@ export default function Home() {
                           : convertInto1Digit(chiSoSuMenh)}
                       </span>
                     </td>
-                    <td className="p-3 text-center border border-white/20">
-                      <span className="text-yellow-400 font-bold text-2xl">
+                    <td className="p-3 text-center border border-amber-200/50">
+                      <span className="text-amber-600 font-bold text-2xl">
                         {ngaySinh1So <= 9
                           ? ngaySinh1So
                           : ngaySinh1So > 9 && detectSpecialNumber(ngaySinh1So)
@@ -638,8 +638,8 @@ export default function Home() {
                           : convertInto1Digit(ngaySinh1So)}
                       </span>
                     </td>
-                    <td className="p-3 text-center border border-white/20">
-                      <span className="text-yellow-400 font-bold text-2xl">
+                    <td className="p-3 text-center border border-amber-200/50">
+                      <span className="text-amber-600 font-bold text-2xl">
                         {chiSoDuongDoi <= 9
                           ? chiSoDuongDoi
                           : chiSoDuongDoi > 9 &&
@@ -650,8 +650,8 @@ export default function Home() {
                           : convertInto1Digit(chiSoDuongDoi)}
                       </span>
                     </td>
-                    <td className="p-3 text-center border border-white/20">
-                      <span className="text-yellow-400 font-bold text-2xl">
+                    <td className="p-3 text-center border border-amber-200/50">
+                      <span className="text-amber-600 font-bold text-2xl">
                         {chiSoThaiDo <= 9
                           ? chiSoThaiDo
                           : chiSoThaiDo > 9 && detectSpecialNumber(chiSoThaiDo)
@@ -667,19 +667,19 @@ export default function Home() {
         </div>
 
         <div className="space-y-8">
-          <section className="bg-black/30 backdrop-blur-md rounded-xl p-6 shadow-xl border border-white/10">
-            <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+          <section className="bg-amber-50/80 backdrop-blur-md rounded-xl p-6 shadow-xl border border-amber-200/50">
+            <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-yellow-600">
               I. Thấu hiểu bản thân
             </h2>
             <div className="mb-8"></div>
             <div className="space-y-6">
               <div className="grid grid-cols-4 gap-6">
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10 ">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Số lặp
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {soLap.length > 0
                           ? soLap.toString().split("").join("")
@@ -688,12 +688,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Ngày sinh
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {ngaySinh1So <= 9
                           ? ngaySinh1So
@@ -704,12 +704,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Tính cách{" "}
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {chiSoTinhCach <= 9
                           ? chiSoTinhCach
@@ -723,12 +723,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Nội tâm{" "}
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {chiSoNoiTam <= 9
                           ? chiSoNoiTam
@@ -742,19 +742,19 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 w-full">
                 <div className="w-full">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Danh đồ
                   </h3>
                   <div className="w-full flex justify-center items-center">
                     {fullName.length > 0 ? (
-                      <table className="border border-white">
+                      <table className="border border-amber-300">
                         <tbody>
                           <tr className=" ">
-                            <td className="border-collapse w-24 h-24  justify-center items-center text-center border-solid border border-white text-3xl">
+                            <td className="border-collapse w-24 h-24 justify-center items-center text-center border-solid border border-amber-300 text-3xl">
                               <span
                                 className={`${
                                   chiSoDamMeTiemAn.includes(3)
-                                    ? "text-yellow-600"
+                                    ? "text-amber-600"
                                     : ""
                                 }`}
                               >
@@ -915,15 +915,15 @@ export default function Home() {
                 </div>
                 <div className="w-full">
                   {" "}
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Sinh đồ
                   </h3>
                   <div className="w-full flex justify-center items-center">
                     {dob.length > 0 ? (
-                      <table className="border border-white">
+                      <table className="border border-amber-300">
                         <tbody>
                           <tr className=" ">
-                            <td className="border-collapse w-24 h-24  justify-center items-center text-center border-solid border border-white text-3xl">
+                            <td className="border-collapse w-24 h-24 justify-center items-center text-center border-solid border border-amber-300 text-3xl">
                               {Array(
                                 Number(
                                   countNumberOfOccurenceInDateOfBirth(dob)[3]
@@ -1018,18 +1018,18 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-black/30 backdrop-blur-md rounded-xl p-6 shadow-xl border border-white/10">
-            <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+          <section className="bg-amber-50/80 backdrop-blur-md rounded-xl p-6 shadow-xl border border-amber-200/50">
+            <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-yellow-600">
               II. Nguồn lực
             </h2>
             <div className="space-y-6">
               <div className="grid grid-cols-4 gap-6">
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10 ">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Thái độ
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {chiSoThaiDo <= 9
                           ? chiSoThaiDo
@@ -1040,12 +1040,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Bản thể tiềm thức
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {chiSoBanTheTiemThuc <= 9
                           ? chiSoBanTheTiemThuc
@@ -1059,12 +1059,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Cân bằng
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {chiSoCanBang <= 9
                           ? chiSoCanBang
@@ -1076,12 +1076,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Trưởng thành
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {convertInto1Digit(
                           convertInto1Digit(chiSoSuMenh) +
@@ -1092,17 +1092,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+              <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                   Cầu nối
                 </h3>
                 <div className="grid grid-cols-2 w-full">
                   <div className="w-full">
-                    <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                    <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                       Đường đời - Sứ mệnh{" "}
                     </h3>
                     <div className="flex items-center space-x-4  justify-center ">
-                      <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                      <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                         <span className="text-2xl font-bold">
                           {Math.abs(
                             convertInto1Digit(chiSoDuongDoi) -
@@ -1113,11 +1113,11 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="w-full">
-                    <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                    <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                       Nội tâm - Tính cách{" "}
                     </h3>
                     <div className="flex items-center space-x-4  justify-center ">
-                      <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                      <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                         <span className="text-2xl font-bold">
                           {Math.abs(
                             convertInto1Digit(chiSoNoiTam) -
@@ -1132,18 +1132,18 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-black/30 backdrop-blur-md rounded-xl p-6 shadow-xl border border-white/10">
-            <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+          <section className="bg-amber-100/50 backdrop-blur-md rounded-xl p-6 shadow-xl border border-amber-200/50">
+            <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-yellow-600">
               III. Dự báo tương lai
             </h2>
             <div className="space-y-6">
               <div className="grid grid-cols-3 gap-6">
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Năm cá nhân ({new Date().getFullYear()})
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {convertInto1Digit(
                           convertInto1Digit(ngaySinh1So) +
@@ -1154,12 +1154,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Sứ mệnh
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {chiSoSuMenh}
                         {chiSoSuMenh > 9
@@ -1169,12 +1169,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <h3 className="text-xl font-semibold mb-3 text-purple-300 flex justify-center items-center">
+                <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
+                  <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                     Đường đời
                   </h3>
                   <div className="flex items-center space-x-4  justify-center ">
-                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <div className="h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
                       <span className="text-2xl font-bold">
                         {chiSoDuongDoi}
                         {chiSoDuongDoi > 9
@@ -1185,7 +1185,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+              <div className="bg-amber-100/50 rounded-lg p-4 border border-amber-200/50">
                 <NumberDiagram numbers={diagramNumbers} />
               </div>
             </div>

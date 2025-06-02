@@ -18,20 +18,20 @@ const InputForm = () => {
       <div className="space-y-2">
         <label
           htmlFor="fullName"
-          className="block text-white text-sm font-medium"
+          className="block text-amber-800 text-sm font-medium"
         >
           Full Name
         </label>
         <input
           type="text"
           id="fullName"
-          className="w-full px-4 py-2 bg-transparent border border-white/30 rounded-lg text-white focus:outline-none focus:border-white"
+          className="w-full px-4 py-2 bg-transparent border border-amber-300/50 rounded-lg text-amber-800 focus:outline-none focus:border-amber-500"
           placeholder="Enter your full name"
         />
       </div>
 
       <div className="space-y-2">
-        <label htmlFor="dob" className="block text-white text-sm font-medium">
+        <label htmlFor="dob" className="block text-amber-800 text-sm font-medium">
           Date of Birth
         </label>
         <div className="relative">
@@ -39,10 +39,10 @@ const InputForm = () => {
             type="date"
             id="dob"
             onChange={handleDateChange}
-            className="w-full px-4 py-2 bg-transparent border border-white/30 rounded-lg text-white focus:outline-none focus:border-white [color-scheme:dark]"
+            className="w-full px-4 py-2 bg-transparent border border-amber-300/50 rounded-lg text-amber-800 focus:outline-none focus:border-amber-500 [color-scheme:light]"
           />
           {date && (
-            <div className="absolute inset-0 flex items-center px-4 pointer-events-none text-white">
+            <div className="absolute inset-0 flex items-center px-4 pointer-events-none text-amber-800">
               {date}
             </div>
           )}

@@ -1115,8 +1115,8 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                   Cầu nối
                 </h3>
-                <div className="grid grid-cols-2 w-full">
-                  <div className="w-full">
+                <div className="grid grid-cols-2 w-full gap-6">
+                  <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-4 border-2 border-amber-300 shadow-lg hover:shadow-xl transition-shadow">
                     <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                       Đường đời - Sứ mệnh{" "}
                     </h3>
@@ -1131,7 +1131,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="w-full">
+                  <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-4 border-2 border-amber-300 shadow-lg hover:shadow-xl transition-shadow">
                     <h3 className="text-xl font-semibold mb-3 text-amber-700 flex justify-center items-center">
                       Nội tâm - Tính cách{" "}
                     </h3>

@@ -53,7 +53,7 @@ const NumberDiagram: React.FC<NumberDiagramProps> = ({ numbers }) => {
             type === "challenge" ? "text-amber-900" : "text-amber-900"
           }`}
         >
-          {type === "challenge" ? "TC" : "Đ"} {peak}
+          {type === "challenge" ? "TT" : "Đ"} {peak}
         </div>
       )}
       {age && (

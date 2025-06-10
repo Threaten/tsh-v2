@@ -529,50 +529,54 @@ export default function Home() {
           Thần Số Học
         </h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-4">
+        <div className="grid grid-cols-1  gap-3 mb-4">
           {/* Input Section */}
           <div className="space-y-3">
-            <div className="bg-amber-50/80 backdrop-blur-md rounded-lg p-4 shadow-lg border border-amber-200/50">
+            <div className="bg-amber-50/80 backdrop-blur-md rounded-lg p-4 shadow-lg border border-amber-200/50 ">
               <div className="space-y-3">
-                <div className="backdrop-blur-sm bg-amber-100/50 p-3 rounded-lg hover:bg-amber-100/70 transition-colors">
-                  <label className="text-base font-medium mb-1 block">
-                    Họ và Tên
-                  </label>
-                  <input
-                    type="text"
-                    id="txtFullName"
-                    className="w-full bg-white/70 border border-amber-200/70 rounded-md p-1.5 text-gray-800 focus:ring-1 focus:ring-amber-500 focus:border-transparent transition-all text-sm"
-                    value={fullName}
-                    onChange={(e) => setFullName(e.target.value)}
-                    placeholder="Nhập họ và tên..."
-                  />
-                </div>
-                <div className="backdrop-blur-sm bg-amber-100/50 p-3 rounded-lg hover:bg-amber-100/70 transition-colors">
-                  <label className="text-base font-medium mb-1 block">
-                    Ngày tháng năm sinh
-                  </label>
-                  <input
-                    className="w-full bg-white/70 border border-amber-200/70 rounded-md p-1.5 text-gray-800 focus:ring-1 focus:ring-amber-500 focus:border-transparent transition-all text-sm"
-                    type="date"
-                    id="txtDoB"
-                    value={dob}
-                    onChange={(e) => setDob(e.target.value)}
-                  />
-                </div>
-                <button
-                  className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 text-gray-800 py-2 px-4 rounded-lg font-medium 
+                <div className="backdrop-blur-sm bg-amber-100/50  p-3 rounded-lg hover:bg-amber-100/70 transition-colors  grid grid-cols-5 gap-5">
+                  <div className="w-full flex col-span-2 justify-center items-center">
+                    <label className="text-base font-medium mb-1 block w-[30%]">
+                      Họ và Tên
+                    </label>
+                    <input
+                      type="text"
+                      id="txtFullName"
+                      className="w-full bg-white/70 border border-amber-200/70 rounded-md p-1.5 text-gray-800 focus:ring-1 focus:ring-amber-500 focus:border-transparent transition-all text-sm"
+                      value={fullName}
+                      onChange={(e) => setFullName(e.target.value)}
+                      placeholder="Nhập họ và tên..."
+                    />
+                  </div>
+                  <div className="w-full flex col-span-2 justify-center items-center">
+                    <label className="text-base font-medium mb-1 block w-[50%]">
+                      Ngày tháng năm sinh
+                    </label>
+                    <input
+                      className="w-full bg-white/70 border border-amber-200/70 rounded-md p-1.5 text-gray-800 focus:ring-1 focus:ring-amber-500 focus:border-transparent transition-all text-sm"
+                      type="date"
+                      id="txtDoB"
+                      value={dob}
+                      onChange={(e) => setDob(e.target.value)}
+                    />
+                  </div>
+                  <div className="w-full col-span-1 flex items-center justify-center">
+                    <button
+                      className="w-0.4 bg-gradient-to-r from-amber-400 to-yellow-500 text-gray-800 py-2 px-4 rounded-lg font-medium 
                            hover:opacity-90 transition-all transform hover:scale-[1.02] active:scale-[0.98]
                            shadow-lg hover:shadow-amber-500/25"
-                  onClick={onSubmit}
-                >
-                  Tính Toán
-                </button>
+                      onClick={onSubmit}
+                    >
+                      Tính Toán
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Results Table */}
-          <div className="bg-amber-50/80 backdrop-blur-md rounded-lg p-3 shadow-lg border border-amber-200/50">
+          {/* <div className="bg-amber-50/80 backdrop-blur-md rounded-lg p-3 shadow-lg border border-amber-200/50">
             <div className="overflow-x-auto">
               <table className="w-full border-collapse shadow-lg text-sm">
                 <thead>
@@ -663,7 +667,7 @@ export default function Home() {
                 </tbody>
               </table>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="space-y-8">

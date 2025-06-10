@@ -37,28 +37,28 @@ const NumberDiagram: React.FC<NumberDiagramProps> = ({ numbers }) => {
   }: NumberData & { className: string }) => (
     <div className={`text-center flex flex-col items-center ${className}`}>
       <div
-        className={`bg-gradient-to-br from-amber-50 to-amber-100 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center mb-2 border-2 
+        className={`bg-gradient-to-br from-amber-50 to-amber-100 backdrop-blur-sm rounded-full w-8 h-8 flex items-center justify-center mb-1 border 
         ${
           type === "challenge"
             ? "border-amber-600 hover:border-amber-700"
             : "border-amber-600 hover:border-amber-700"
         } 
-        transition-colors shadow-lg ring-2 ring-amber-200`}
+        transition-colors shadow ring-1 ring-amber-200`}
       >
-        <span className="text-2xl font-bold text-amber-900">{number}</span>
+        <span className="text-lg font-semibold text-black">{number}</span>
       </div>
       {peak && (
         <div
-          className={`text-sm font-medium whitespace-nowrap ${
+          className={`text-xs font-medium whitespace-nowrap ${
             type === "challenge" ? "text-amber-900" : "text-amber-900"
           }`}
         >
-          {type === "challenge" ? "Thử thách" : "Đỉnh"} {peak}
+          {type === "challenge" ? "TC" : "Đ"} {peak}
         </div>
       )}
       {age && (
-        <div className="text-sm text-amber-800 font-medium whitespace-nowrap text-center flex items-center justify-center gap-1">
-          <span>{age} tuổi</span>
+        <div className="text-xs text-amber-800 font-medium whitespace-nowrap text-center flex items-center justify-center gap-0.5">
+          <span>{age}t</span>
           {year && <span>({year})</span>}
         </div>
       )}
@@ -66,7 +66,7 @@ const NumberDiagram: React.FC<NumberDiagramProps> = ({ numbers }) => {
   );
 
   return (
-    <div className="relative w-[500px] h-[600px] mx-auto bg-transparent">
+    <div className="relative w-[400px] h-[480px] mx-auto bg-transparent">
       <svg className="absolute inset-0 w-full h-full" viewBox="0 0 500 600">
         {/* Main diamond outline with gradient */}
         <defs>

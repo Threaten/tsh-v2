@@ -673,7 +673,7 @@ export default function Home() {
         <div className="space-y-8">
           <section className="bg-gradient-to-br from-amber-50/95 to-amber-100/90 backdrop-blur-md rounded-xl p-4 shadow-lg border-2 border-amber-200">
             <h2 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-amber-700 to-amber-500 drop-shadow-sm">
-              I. Thông tin cơ bản
+              I. Thấu hiểu bản thân
             </h2>
             <div className="mb-4"></div>
             <div className="space-y-4">

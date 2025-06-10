@@ -985,12 +985,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-amber-100/50 rounded-lg p-3 border border-amber-200/50">
-                <h3 className="text-base font-medium mb-2 text-amber-700 flex justify-center items-center">
+                <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
                   Cầu nối
                 </h3>
                 <div className="grid grid-cols-2 w-full gap-3">
                   <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
-                    <h3 className="text-sm font-medium mb-2 text-amber-700 flex justify-center items-center">
+                    <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
                       Đường đời - Sứ mệnh{" "}
                     </h3>
                     <div className="flex items-center space-x-3 justify-center">
@@ -1005,7 +1005,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
-                    <h3 className="text-sm font-medium mb-2 text-amber-700 flex justify-center items-center">
+                    <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
                       Nội tâm - Tính cách{" "}
                     </h3>
                     <div className="flex items-center space-x-3 justify-center">
@@ -1031,7 +1031,7 @@ export default function Home() {
             <div className="space-y-3">
               <div className="grid grid-cols-3 gap-3">
                 <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-sm font-medium mb-2 text-amber-700 flex justify-center items-center">
+                  <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
                     Năm cá nhân ({new Date().getFullYear()})
                   </h3>
                   <div className="flex items-center space-x-3 justify-center">
@@ -1047,7 +1047,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-sm font-medium mb-2 text-amber-700 flex justify-center items-center">
+                  <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
                     Sứ mệnh
                   </h3>
                   <div className="flex items-center space-x-3 justify-center">
@@ -1062,7 +1062,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-sm font-medium mb-2 text-amber-700 flex justify-center items-center">
+                  <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
                     Đường đời
                   </h3>
                   <div className="flex items-center space-x-3 justify-center">

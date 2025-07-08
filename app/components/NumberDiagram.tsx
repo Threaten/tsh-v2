@@ -66,7 +66,10 @@ const NumberDiagram: React.FC<NumberDiagramProps> = ({ numbers }) => {
   );
 
   return (
-    <div className="relative w-[400px] h-[480px] mx-auto bg-transparent">
+    <div className="relative w-[300px] h-[480px] bg-transparent mx-auto ">
+      {/* <h3 className="text-base font-medium mb-2 text-amber-700 flex justify-center items-center">
+        CAI GI DO?
+      </h3> */}
       <svg className="absolute inset-0 w-full h-full" viewBox="0 0 500 600">
         {/* Main diamond outline with gradient */}
         <defs>

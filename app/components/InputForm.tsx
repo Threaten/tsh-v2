@@ -14,7 +14,7 @@ const InputForm = () => {
   };
 
   return (
-    <div className="w-[400px] space-y-4">
+    <div className="w-[400px] space-y-2">
       <div className="space-y-2">
         <label
           htmlFor="fullName"
@@ -31,7 +31,10 @@ const InputForm = () => {
       </div>
 
       <div className="space-y-2">
-        <label htmlFor="dob" className="block text-amber-800 text-sm font-medium">
+        <label
+          htmlFor="dob"
+          className="block text-amber-800 text-sm font-medium"
+        >
           Date of Birth
         </label>
         <div className="relative">

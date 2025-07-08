@@ -574,108 +574,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* Results Table */}
-          {/* <div className="bg-amber-50/80 backdrop-blur-md rounded-lg p-3 shadow-lg border border-amber-200/50">
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse shadow-lg text-sm">
-                <thead>
-                  <tr className="bg-amber-100/80">
-                    <th className="p-2 text-center border border-amber-200/50 font-medium text-xs">
-                      Nội tâm
-                    </th>
-                    <th className="p-2 text-center border border-amber-200/50 font-medium text-xs">
-                      Tính cách
-                    </th>
-                    <th className="p-2 text-center border border-amber-200/50 font-medium text-xs">
-                      Sứ mệnh
-                    </th>
-                    <th className="p-2 text-center border border-amber-200/50 font-medium text-xs">
-                      Ngày sinh
-                    </th>
-                    <th className="p-2 text-center border border-amber-200/50 font-medium text-xs">
-                      Đường đời
-                    </th>
-                    <th className="p-2 text-center border border-amber-200/50 font-medium text-xs">
-                      Thái độ
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="hover:bg-amber-100/50 transition-colors">
-                    <td className="p-2 text-center border border-amber-200/50">
-                      <span className="text-base font-bold">
-                        {chiSoNoiTam <= 9
-                          ? chiSoNoiTam
-                          : chiSoNoiTam > 9 && detectSpecialNumber(chiSoNoiTam)
-                          ? chiSoNoiTam + "/" + convertInto1Digit(chiSoNoiTam)
-                          : convertInto1Digit(chiSoNoiTam)}
-                      </span>
-                    </td>
-                    <td className="p-2 text-center border border-amber-200/50">
-                      <span className="text-base font-bold">
-                        {chiSoTinhCach <= 9
-                          ? chiSoTinhCach
-                          : chiSoTinhCach > 9 &&
-                            detectSpecialNumber(chiSoTinhCach)
-                          ? chiSoTinhCach +
-                            "/" +
-                            convertInto1Digit(chiSoTinhCach)
-                          : convertInto1Digit(chiSoTinhCach)}
-                      </span>
-                    </td>
-                    <td className="p-2 text-center border border-amber-200/50">
-                      <span className="text-base font-bold">
-                        {chiSoSuMenh <= 9
-                          ? chiSoSuMenh
-                          : chiSoSuMenh > 9 && detectSpecialNumber(chiSoSuMenh)
-                          ? chiSoSuMenh + "/" + convertInto1Digit(chiSoSuMenh)
-                          : convertInto1Digit(chiSoSuMenh)}
-                      </span>
-                    </td>
-                    <td className="p-2 text-center border border-amber-200/50">
-                      <span className="text-base font-bold">
-                        {ngaySinh1So <= 9
-                          ? ngaySinh1So
-                          : ngaySinh1So > 9 && detectSpecialNumber(ngaySinh1So)
-                          ? ngaySinh1So + "/" + convertInto1Digit(ngaySinh1So)
-                          : convertInto1Digit(ngaySinh1So)}
-                      </span>
-                    </td>
-                    <td className="p-2 text-center border border-amber-200/50">
-                      <span className="text-base font-bold">
-                        {chiSoDuongDoi <= 9
-                          ? chiSoDuongDoi
-                          : chiSoDuongDoi > 9 &&
-                            detectSpecialNumber(chiSoDuongDoi)
-                          ? chiSoDuongDoi +
-                            "/" +
-                            convertInto1Digit(chiSoDuongDoi)
-                          : convertInto1Digit(chiSoDuongDoi)}
-                      </span>
-                    </td>
-                    <td className="p-2 text-center border border-amber-200/50">
-                      <span className="text-base font-bold">
-                        {chiSoThaiDo <= 9
-                          ? chiSoThaiDo
-                          : chiSoThaiDo > 9 && detectSpecialNumber(chiSoThaiDo)
-                          ? chiSoThaiDo + "/" + convertInto1Digit(chiSoThaiDo)
-                          : convertInto1Digit(chiSoThaiDo)}
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div> */}
         </div>
 
         <div className="space-y-8">
           <section className="bg-gradient-to-br from-amber-50/95 to-amber-100/90 backdrop-blur-md rounded-xl p-4 shadow-lg border-2 border-amber-200">
-            <h2 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-amber-700 to-amber-500 drop-shadow-sm">
-              I. Thấu hiểu bản thân
-            </h2>
-            <div className="mb-4"></div>
             <div className="space-y-4">
               <div className="grid grid-cols-4 gap-4">
                 <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
@@ -694,16 +596,16 @@ export default function Home() {
                 </div>
                 <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
                   <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
-                    Ngày sinh
+                    Nội tâm{" "}
                   </h3>
                   <div className="flex items-center space-x-2 justify-center">
                     <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center shadow ring-1 ring-amber-200">
                       <span className="text-base font-bold text-black">
-                        {ngaySinh1So <= 9
-                          ? ngaySinh1So
-                          : ngaySinh1So > 9 && detectSpecialNumber(ngaySinh1So)
-                          ? ngaySinh1So + "/" + convertInto1Digit(ngaySinh1So)
-                          : ngaySinh1So}
+                        {chiSoNoiTam <= 9
+                          ? chiSoNoiTam
+                          : chiSoNoiTam > 9 && detectSpecialNumber(chiSoNoiTam)
+                          ? chiSoNoiTam + "/" + convertInto1Digit(chiSoNoiTam)
+                          : chiSoNoiTam}
                       </span>
                     </div>
                   </div>
@@ -729,197 +631,52 @@ export default function Home() {
                 </div>
                 <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
                   <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
-                    Nội tâm{" "}
+                    Sứ mệnh
                   </h3>
-                  <div className="flex items-center space-x-2 justify-center">
-                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center shadow ring-1 ring-amber-200">
-                      <span className="text-base font-bold text-black">
-                        {chiSoNoiTam <= 9
-                          ? chiSoNoiTam
-                          : chiSoNoiTam > 9 && detectSpecialNumber(chiSoNoiTam)
-                          ? chiSoNoiTam + "/" + convertInto1Digit(chiSoNoiTam)
-                          : chiSoNoiTam}
+                  <div className="flex items-center space-x-3 justify-center">
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
+                      <span className="text-xl font-bold">
+                        {chiSoSuMenh}
+                        {chiSoSuMenh > 9
+                          ? "/" + convertInto1Digit(chiSoSuMenh)
+                          : null}
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-2 w-full">
-                <div className="w-full">
-                  <h3 className="text-base font-medium mb-2 text-amber-700 flex justify-center items-center">
-                    Danh đồ
+              <div className="grid grid-cols-3 gap-4">
+                <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
+                  <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
+                    Ngày sinh
                   </h3>
-                  <div className="w-full flex justify-center items-center">
-                    {fullName.length > 0 ? (
-                      <table className="border-2 border-amber-400 shadow-lg">
-                        <tbody>
-                          <tr>
-                            {[3, 6, 9].map((num) => (
-                              <td
-                                key={num}
-                                className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
-                              >
-                                <span
-                                  className={`${
-                                    chiSoDamMeTiemAn.includes(num)
-                                      ? "text-black font-bold"
-                                      : "text-black font-medium"
-                                  } text-xl`}
-                                >
-                                  {Array(
-                                    Number(
-                                      countNumberOfOccurenceInName(fullName)[
-                                        num
-                                      ]
-                                    )
-                                  )
-                                    .fill(num)
-                                    .join("")}
-                                </span>
-                              </td>
-                            ))}
-                          </tr>
-                          <tr>
-                            {[2, 5, 8].map((num) => (
-                              <td
-                                key={num}
-                                className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
-                              >
-                                <span
-                                  className={`${
-                                    chiSoDamMeTiemAn.includes(num)
-                                      ? "text-black font-bold"
-                                      : "text-black font-medium"
-                                  } text-xl`}
-                                >
-                                  {Array(
-                                    Number(
-                                      countNumberOfOccurenceInName(fullName)[
-                                        num
-                                      ]
-                                    )
-                                  )
-                                    .fill(num)
-                                    .join("")}
-                                </span>
-                              </td>
-                            ))}
-                          </tr>
-                          <tr>
-                            {[1, 4, 7].map((num) => (
-                              <td
-                                key={num}
-                                className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
-                              >
-                                <span
-                                  className={`${
-                                    chiSoDamMeTiemAn.includes(num)
-                                      ? "text-black font-bold"
-                                      : "text-black font-medium"
-                                  } text-xl`}
-                                >
-                                  {Array(
-                                    Number(
-                                      countNumberOfOccurenceInName(fullName)[
-                                        num
-                                      ]
-                                    )
-                                  )
-                                    .fill(num)
-                                    .join("")}
-                                </span>
-                              </td>
-                            ))}
-                          </tr>
-                        </tbody>
-                      </table>
-                    ) : null}
+                  <div className="flex items-center space-x-2 justify-center">
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center shadow ring-1 ring-amber-200">
+                      <span className="text-base font-bold text-black">
+                        {ngaySinh1So <= 9
+                          ? ngaySinh1So
+                          : ngaySinh1So > 9 && detectSpecialNumber(ngaySinh1So)
+                          ? ngaySinh1So + "/" + convertInto1Digit(ngaySinh1So)
+                          : ngaySinh1So}
+                      </span>
+                    </div>
                   </div>
                 </div>
-                <div className="w-full">
-                  {" "}
-                  <h3 className="text-base font-medium mb-2 text-amber-700 flex justify-center items-center">
-                    Sinh đồ
+                <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
+                  <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
+                    Đường đời
                   </h3>
-                  <div className="w-full flex justify-center items-center">
-                    {dob.length > 0 ? (
-                      <table className="border-2 border-amber-400 shadow-lg">
-                        <tbody>
-                          <tr>
-                            {[3, 6, 9].map((num) => (
-                              <td
-                                key={num}
-                                className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
-                              >
-                                <span className="text-xl text-black font-medium">
-                                  {Array(
-                                    Number(
-                                      countNumberOfOccurenceInDateOfBirth(dob)[
-                                        num
-                                      ]
-                                    )
-                                  )
-                                    .fill(num)
-                                    .join("")}
-                                </span>
-                              </td>
-                            ))}
-                          </tr>
-                          <tr>
-                            {[2, 5, 8].map((num) => (
-                              <td
-                                key={num}
-                                className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
-                              >
-                                <span className="text-xl text-black font-medium">
-                                  {Array(
-                                    Number(
-                                      countNumberOfOccurenceInDateOfBirth(dob)[
-                                        num
-                                      ]
-                                    )
-                                  )
-                                    .fill(num)
-                                    .join("")}
-                                </span>
-                              </td>
-                            ))}
-                          </tr>
-                          <tr>
-                            {[1, 4, 7].map((num) => (
-                              <td
-                                key={num}
-                                className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
-                              >
-                                <span className="text-xl text-black font-medium">
-                                  {Array(
-                                    Number(
-                                      countNumberOfOccurenceInDateOfBirth(dob)[
-                                        num
-                                      ]
-                                    )
-                                  )
-                                    .fill(num)
-                                    .join("")}
-                                </span>
-                              </td>
-                            ))}
-                          </tr>
-                        </tbody>
-                      </table>
-                    ) : null}
+                  <div className="flex items-center space-x-3 justify-center">
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
+                      <span className="text-xl font-bold">
+                        {chiSoDuongDoi}
+                        {chiSoDuongDoi > 9
+                          ? "/" + convertInto1Digit(chiSoDuongDoi)
+                          : null}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-gradient-to-br from-amber-50/95 to-amber-100/90 backdrop-blur-md rounded-xl p-4 shadow-lg border-2 border-amber-200">
-            <h2 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-amber-700 to-amber-500 drop-shadow-sm">
-              II. Nguồn lực
-            </h2>
-            <div className="space-y-4">
-              <div className="grid grid-cols-4 gap-4">
                 <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
                   <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
                     Thái độ
@@ -936,6 +693,194 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="grid grid-cols-2 lg:grid-cols-3 w-full items-center justify-center gap-4">
+                <div className="w-full">
+                  <h3 className="text-base font-medium mb-2 text-amber-700 flex justify-center items-center">
+                    Danh đồ
+                  </h3>
+                  <div className="w-full flex justify-center items-center">
+                    <table className="border-2 border-amber-400 shadow-lg">
+                      <tbody>
+                        <tr>
+                          {[3, 6, 9].map((num) => (
+                            <td
+                              key={num}
+                              className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
+                            >
+                              <span
+                                className={`${
+                                  fullName.length > 0 &&
+                                  chiSoDamMeTiemAn.includes(num)
+                                    ? "text-black font-bold"
+                                    : "text-black font-medium"
+                                } text-xl`}
+                              >
+                                {fullName.length > 0
+                                  ? Array(
+                                      Number(
+                                        countNumberOfOccurenceInName(fullName)[
+                                          num
+                                        ]
+                                      )
+                                    )
+                                      .fill(num)
+                                      .join("")
+                                  : num}
+                              </span>
+                            </td>
+                          ))}
+                        </tr>
+                        <tr>
+                          {[2, 5, 8].map((num) => (
+                            <td
+                              key={num}
+                              className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
+                            >
+                              <span
+                                className={`${
+                                  fullName.length > 0 &&
+                                  chiSoDamMeTiemAn.includes(num)
+                                    ? "text-black font-bold"
+                                    : "text-black font-medium"
+                                } text-xl`}
+                              >
+                                {fullName.length > 0
+                                  ? Array(
+                                      Number(
+                                        countNumberOfOccurenceInName(fullName)[
+                                          num
+                                        ]
+                                      )
+                                    )
+                                      .fill(num)
+                                      .join("")
+                                  : num}
+                              </span>
+                            </td>
+                          ))}
+                        </tr>
+                        <tr>
+                          {[1, 4, 7].map((num) => (
+                            <td
+                              key={num}
+                              className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
+                            >
+                              <span
+                                className={`${
+                                  fullName.length > 0 &&
+                                  chiSoDamMeTiemAn.includes(num)
+                                    ? "text-black font-bold"
+                                    : "text-black font-medium"
+                                } text-xl`}
+                              >
+                                {fullName.length > 0
+                                  ? Array(
+                                      Number(
+                                        countNumberOfOccurenceInName(fullName)[
+                                          num
+                                        ]
+                                      )
+                                    )
+                                      .fill(num)
+                                      .join("")
+                                  : num}
+                              </span>
+                            </td>
+                          ))}
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div className="w-full">
+                  {" "}
+                  <h3 className="text-base font-medium mb-2 text-amber-700 flex justify-center items-center">
+                    Sinh đồ
+                  </h3>
+                  <div className="w-full flex justify-center items-center">
+                    <table className="border-2 border-amber-400 shadow-lg">
+                      <tbody>
+                        <tr>
+                          {[3, 6, 9].map((num) => (
+                            <td
+                              key={num}
+                              className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
+                            >
+                              <span className="text-xl text-black font-medium">
+                                {dob.length > 0
+                                  ? Array(
+                                      Number(
+                                        countNumberOfOccurenceInDateOfBirth(
+                                          dob
+                                        )[num]
+                                      )
+                                    )
+                                      .fill(num)
+                                      .join("")
+                                  : num}
+                              </span>
+                            </td>
+                          ))}
+                        </tr>
+                        <tr>
+                          {[2, 5, 8].map((num) => (
+                            <td
+                              key={num}
+                              className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
+                            >
+                              <span className="text-xl text-black font-medium">
+                                {dob.length > 0
+                                  ? Array(
+                                      Number(
+                                        countNumberOfOccurenceInDateOfBirth(
+                                          dob
+                                        )[num]
+                                      )
+                                    )
+                                      .fill(num)
+                                      .join("")
+                                  : num}
+                              </span>
+                            </td>
+                          ))}
+                        </tr>
+                        <tr>
+                          {[1, 4, 7].map((num) => (
+                            <td
+                              key={num}
+                              className="border-collapse w-16 h-16 justify-center items-center text-center border-2 border-amber-400 bg-amber-50/80"
+                            >
+                              <span className="text-xl text-black font-medium">
+                                {dob.length > 0
+                                  ? Array(
+                                      Number(
+                                        countNumberOfOccurenceInDateOfBirth(
+                                          dob
+                                        )[num]
+                                      )
+                                    )
+                                      .fill(num)
+                                      .join("")
+                                  : num}
+                              </span>
+                            </td>
+                          ))}
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div className="bg-amber-100/50 rounded-lg p-3 border border-amber-200/50">
+                  <NumberDiagram numbers={diagramNumbers} />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-gradient-to-br from-amber-50/95 to-amber-100/90 backdrop-blur-md rounded-xl p-4 shadow-lg border-2 border-amber-200">
+            <div className="space-y-4">
+              <div className="grid grid-cols-3 gap-4">
                 <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
                   <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
                     Bản thể tiềm thức
@@ -988,52 +933,38 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-amber-100/50 rounded-lg p-3 border border-amber-200/50">
-                <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
-                  Cầu nối
-                </h3>
-                <div className="grid grid-cols-2 w-full gap-3">
-                  <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
-                    <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
-                      Đường đời - Sứ mệnh{" "}
-                    </h3>
-                    <div className="flex items-center space-x-3 justify-center">
-                      <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
-                        <span className="text-xl font-bold">
-                          {Math.abs(
-                            convertInto1Digit(chiSoDuongDoi) -
-                              convertInto1Digit(chiSoSuMenh)
-                          )}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
-                    <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
-                      Nội tâm - Tính cách{" "}
-                    </h3>
-                    <div className="flex items-center space-x-3 justify-center">
-                      <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
-                        <span className="text-xl font-bold">
-                          {Math.abs(
-                            convertInto1Digit(chiSoNoiTam) -
-                              convertInto1Digit(chiSoTinhCach)
-                          )}
-                        </span>
-                      </div>
+
+              <div className="bg-amber-100/50 rounded-lg p-3 border border-amber-200/50 grid grid-cols-3 gap-4">
+                <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
+                  <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
+                    Cầu nối Đường đời - Sứ mệnh{" "}
+                  </h3>
+                  <div className="flex items-center space-x-3 justify-center">
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
+                      <span className="text-xl font-bold">
+                        {Math.abs(
+                          convertInto1Digit(chiSoDuongDoi) -
+                            convertInto1Digit(chiSoSuMenh)
+                        )}
+                      </span>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-gradient-to-br from-amber-50/95 to-amber-100/90 backdrop-blur-md rounded-xl p-3 shadow-lg border border-amber-200">
-            <h2 className="text-2xl font-semibold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
-              III. Dự báo tương lai
-            </h2>
-            <div className="space-y-3">
-              <div className="grid grid-cols-3 gap-3">
+                <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
+                  <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
+                    Cầu nối Nội tâm - Tính cách{" "}
+                  </h3>
+                  <div className="flex items-center space-x-3 justify-center">
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
+                      <span className="text-xl font-bold">
+                        {Math.abs(
+                          convertInto1Digit(chiSoNoiTam) -
+                            convertInto1Digit(chiSoTinhCach)
+                        )}
+                      </span>
+                    </div>
+                  </div>
+                </div>
                 <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
                   <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
                     Năm cá nhân ({new Date().getFullYear()})
@@ -1050,39 +981,6 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
-                    Sứ mệnh
-                  </h3>
-                  <div className="flex items-center space-x-3 justify-center">
-                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
-                      <span className="text-xl font-bold">
-                        {chiSoSuMenh}
-                        {chiSoSuMenh > 9
-                          ? "/" + convertInto1Digit(chiSoSuMenh)
-                          : null}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 rounded-lg p-3 border border-amber-300 shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-sm font-bold mb-2 text-amber-800 flex justify-center items-center">
-                    Đường đời
-                  </h3>
-                  <div className="flex items-center space-x-3 justify-center">
-                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
-                      <span className="text-xl font-bold">
-                        {chiSoDuongDoi}
-                        {chiSoDuongDoi > 9
-                          ? "/" + convertInto1Digit(chiSoDuongDoi)
-                          : null}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-amber-100/50 rounded-lg p-3 border border-amber-200/50">
-                <NumberDiagram numbers={diagramNumbers} />
               </div>
             </div>
           </section>
